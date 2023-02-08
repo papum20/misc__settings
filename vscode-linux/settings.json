@@ -31,6 +31,9 @@
   	//THEME
 	"workbench.preferredDarkColorTheme": "Monokai Dimmed",
 	"workbench.colorTheme": "Monokai",
+		
+	//EDITOR
+	"editor.selectionClipboard": false,		//vertical selection middle mouse
 	
 	//INDENT
 	"editor.detectIndentation": false,
