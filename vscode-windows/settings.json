@@ -28,16 +28,31 @@
     "-l"
   ],
   */
+//	THEME
 	"workbench.preferredDarkColorTheme": "Monokai Dimmed",
 	"workbench.colorTheme": "Monokai",
+	  
+	//EDITOR
+	"editor.selectionClipboard": false,		//vertical selection middle mouse
+  
+	//INDENT
 	"editor.detectIndentation": false,
-	"editor.insertSpaces": false,
+	"editor.insertSpaces": false,	
+	
+	//ERRORS
 	"C_Cpp.errorSquiggles": "enabled",				//sottolineatura rossa attivata
 	"C_Cpp.codeAnalysis.runAutomatically": true,	//
-
+	"problems.decorations.enabled": true,
+	"explorer.decorations.colors": true,
+	"C_Cpp.default.enableConfigurationSquiggles": true,
+	"explorer.decorations.badges": true,
+  
 	// AUTOCOMPLETE
 	"C_Cpp.autocomplete": "default",
 	"C_Cpp.autocompleteAddParentheses": true,
 	"workbench.activityBar.visible": true
+  
+	//C Cpp
+	//"C_Cpp.default.compilerPath": 		//to readapt with own compiler path
 
 }
