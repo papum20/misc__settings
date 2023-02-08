@@ -1,5 +1,6 @@
 {
     "files.associations": {
+		"*.h": "c",
 		"ex1.C": "cpp",
 		"assembler.h": "c",
 		"random": "c",
