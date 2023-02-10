@@ -1,19 +1,6 @@
 {
     "files.associations": {
-		"*.h": "c",
-		"ex1.C": "cpp",
-		"assembler.h": "c",
-		"random": "c",
-		"type_traits": "c",
-		"iostream": "cpp",
-		"ctime": "cpp",
-		"*.tcc": "cpp",
-		"limits": "cpp",
-		"ostream": "cpp",
-		"cmath": "cpp",
-		"exception": "cpp",
-		"new": "cpp",
-		"cstdlib": "cpp"
+		"*.h": "c"
 	},
 
 
@@ -32,20 +19,23 @@
   	//THEME
 	"workbench.preferredDarkColorTheme": "Monokai Dimmed",
 	"workbench.colorTheme": "Monokai",
-		
+	
 	//EDITOR
 	"editor.selectionClipboard": false,		//vertical selection middle mouse
-	
+
 	//INDENT
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,	
   
 	//ERRORS
-	"C_Cpp.errorSquiggles": "enabled",				//sottolineatura rossa attivata
+	"C_Cpp.default.enableConfigurationSquiggles": true,
+	"C_Cpp.codeAnalysis.clangTidy.enabled": true,		//auto-runs task/build, to check errors
+	"C_Cpp.codeAnalysis.exclude": {},
 	"C_Cpp.codeAnalysis.runAutomatically": true,	//
+	"C_Cpp.errorSquiggles": "enabled",				//sottolineatura rossa attivata
+	"C_Cpp.intelliSenseEngine": "default",
 	"problems.decorations.enabled": true,
 	"explorer.decorations.colors": true,
-	"C_Cpp.default.enableConfigurationSquiggles": true,
 	"explorer.decorations.badges": true,
 
 	// AUTOCOMPLETE
