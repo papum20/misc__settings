@@ -43,7 +43,13 @@
 	"C_Cpp.autocompleteAddParentheses": true,
 	"workbench.activityBar.visible": true,
 
-	//C Cpp
-  	"C_Cpp.default.compilerPath": "/usr/bin/gcc"
+	// C Cpp
+  	"C_Cpp.default.compilerPath": "/usr/bin/gcc",
+
+	// python, linting
+	"pylint.args": [
+		"--disable=C0303",			// Trailing whitespace
+		"--indent-string='\t'"		// Use tabs for indentation
+	]
 
 }
