@@ -16,39 +16,82 @@
     "-l"
   ],
   */
-  	//THEME
+  	// THEME
 	"workbench.preferredDarkColorTheme": "Monokai Dimmed",
 	"workbench.colorTheme": "Monokai",
 	
-	//EDITOR
+	// EDITOR
 	"editor.selectionClipboard": false,		//vertical selection middle mouse
 
-	//INDENT
+	// INDENT
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,	
   
-	//ERRORS
+	// ERRORS
+	"problems.decorations.enabled": true,
+	"explorer.decorations.colors": true,
+	"explorer.decorations.badges": true,
+
+	// AUTOCOMPLETE
+	"workbench.activityBar.visible": true,
+
+	// C/C++
+	"C_Cpp.default.compilerPath": "/usr/bin/gcc",
+	// C - ERRORS
 	"C_Cpp.default.enableConfigurationSquiggles": true,
 	"C_Cpp.codeAnalysis.clangTidy.enabled": true,		//auto-runs task/build, to check errors
 	"C_Cpp.codeAnalysis.exclude": {},
 	"C_Cpp.codeAnalysis.runAutomatically": true,	//
 	"C_Cpp.errorSquiggles": "enabled",				//sottolineatura rossa attivata
 	"C_Cpp.intelliSenseEngine": "default",
-	"problems.decorations.enabled": true,
-	"explorer.decorations.colors": true,
-	"explorer.decorations.badges": true,
 
-	// AUTOCOMPLETE
+	// C - AUTOCOMPLETE
 	"C_Cpp.autocomplete": "default",
 	"C_Cpp.autocompleteAddParentheses": true,
-	"workbench.activityBar.visible": true,
 
-	// C Cpp
-  	"C_Cpp.default.compilerPath": "/usr/bin/gcc",
+	// PYTHON
+
+	"python.analysis.typeCheckingMode": "basic",
+	"python.analysis.include": ["C:\\Conda\\envs\\spyderenv\\Lib\\site-packages"],
 
 	// python, linting
-	"pylint.args": [
+	"python.linting.enabled": false,
+	"python.linting.pylintEnabled": false,
+	"python.analysis.extraPaths": [
+		"lib"
+	],
+	/*
+		pylint disabled...
+		C = conventions,
+		W = warnings,
+		E = errors,
+		R = refactoring
+	*/
+	"python.linting.pylintArgs": [
+		"--disable=C0103",
+		"--disable=C0114",
+		"--disable=C0115",
+		"--disable=C0116",
+		"--disable=C0303",
+		"--disable=C0301",
 		"--disable=C0303",			// Trailing whitespace
+		"--disable=C0304",
+		"--disable=C0311",
+		"--disable=C0321",
+		"--disable=C0325",
+		"--disable=C3001",
+		"--disable=C0411",
+		"--disable=C0413",
+		"--disable=R0913",
+		"--disable=R0914",
+		"--disable=R1705",
+		"--disable=W0012",
+		"--disable=W0105",
+		"--disable=W0311",
+		"--disable=W0702",
+		"--disable=W0718",
+		"--disable=W0719",
+		"--disable=W1514",
 		"--indent-string='\t'"		// Use tabs for indentation
 	]
 
