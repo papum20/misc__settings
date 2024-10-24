@@ -55,8 +55,10 @@
 	"python.analysis.include": ["C:\\Conda\\envs\\spyderenv\\Lib\\site-packages"],
 
 	// python, linting
-	"python.linting.enabled": false,
-	"python.linting.pylintEnabled": false,
+	// python.linting replaced by pylint
+
+	//"python.linting.enabled": false,
+	//"python.linting.pylintEnabled": false,
 	"python.analysis.extraPaths": [
 		"lib"
 	],
@@ -67,7 +69,7 @@
 		E = errors,
 		R = refactoring
 	*/
-	"python.linting.pylintArgs": [
+	"pylint.args": [
 		"--disable=C0103",
 		"--disable=C0114",
 		"--disable=C0115",
