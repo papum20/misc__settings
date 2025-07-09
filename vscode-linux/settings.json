@@ -25,7 +25,7 @@
 
 	// INDENT
 	"editor.detectIndentation": false,
-	"editor.insertSpaces": false,	
+	"editor.insertSpaces": false,			// use tabs, not spaces. Also useful to avoid pylint warning about spaces indentation	
   
 	// ERRORS
 	"problems.decorations.enabled": true,

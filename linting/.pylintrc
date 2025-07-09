@@ -1,0 +1,4 @@
+# this avoids the warning not detecting the expected number of spaces, when indenting with tabs
+# also set "editor.insertSpaces": false in settings.json
+[FORMAT]
+indent-string=\t
