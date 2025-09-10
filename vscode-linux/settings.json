@@ -71,12 +71,12 @@
 	*/
 	"pylint.args": [
 		"--disable=C0103",
-		"--disable=C0114",
+		"--disable=C0114",		// Missing module docstring PylintC0114:missing-module-docstring
 		"--disable=C0115",
 		"--disable=C0116",
 		"--disable=C0303",
 		"--disable=C0301",
-		"--disable=C0303",			// Trailing whitespace
+		"--disable=C0303",		// Trailing whitespace PylintC0303:trailing-whitespace
 		"--disable=C0304",
 		"--disable=C0311",
 		"--disable=C0321",
@@ -90,11 +90,19 @@
 		"--disable=W0012",
 		"--disable=W0105",
 		"--disable=W0311",
+		"--disable=W0603",		// Using the global statement PylintW0603:global-statement
+		"--disable=W0621",		// Redefining name 'losses' from outer scope PylintW0621:redefined-outer-name
 		"--disable=W0702",
 		"--disable=W0718",
 		"--disable=W0719",
 		"--disable=W1514",
-		"--indent-string='\t'"		// Use tabs for indentation
+		"--indent-string='\t'"	// Use tabs for indentation
 	]
+	/*
+		To disable in code, add a comment on the line before, or at the beginning of a file:
+	 	# pylint: disable=W0613
+		For pylance, add something like this at the end of a line:
+	 	# type: ignore
+	 */
 
 }
