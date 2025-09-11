@@ -73,20 +73,17 @@
 		"--disable=C0103",
 		"--disable=C0114",		// Missing module docstring PylintC0114:missing-module-docstring
 		"--disable=C0115",
-		"--disable=C0116",
+		"--disable=C0116",		// Missing function or method docstring PylintC0116:missing-function-docstring
+		"--disable=C0301",		// Line too long PylintC0301:line-too-long
 		"--disable=C0303",
-		"--disable=C0301",
 		"--disable=C0303",		// Trailing whitespace PylintC0303:trailing-whitespace
-		"--disable=C0304",
+		"--disable=C0304",		// Final newline missing PylintC0304:missing-final-newline
 		"--disable=C0311",
 		"--disable=C0321",
 		"--disable=C0325",
 		"--disable=C3001",
 		"--disable=C0411",
 		"--disable=C0413",
-		"--disable=R0913",
-		"--disable=R0914",
-		"--disable=R1705",
 		"--disable=W0012",
 		"--disable=W0105",
 		"--disable=W0311",
@@ -96,6 +93,11 @@
 		"--disable=W0718",
 		"--disable=W0719",
 		"--disable=W1514",
+		"--disable=R0913",		// Too many arguments PylintR0913:too-many-arguments
+		"--disable=R0914",		// Too many local variables PylintR0914:too-many-locals
+		"--disable=R0915",		// Too many statements PylintR0915:too-many-statements
+		"--disable=R0917",		// Too many positional arguments PylintR0917:too-many-positional-arguments
+		"--disable=R1705",
 		"--indent-string='\t'"	// Use tabs for indentation
 	]
 	/*
