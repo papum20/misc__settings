@@ -72,7 +72,7 @@
 	"pylint.args": [
 		"--disable=C0103",
 		"--disable=C0114",		// Missing module docstring PylintC0114:missing-module-docstring
-		"--disable=C0115",
+		"--disable=C0115",		// Missing class docstring PylintC0115:missing-class-docstring
 		"--disable=C0116",		// Missing function or method docstring PylintC0116:missing-function-docstring
 		"--disable=C0301",		// Line too long PylintC0301:line-too-long
 		"--disable=C0303",
@@ -97,7 +97,7 @@
 		"--disable=R0914",		// Too many local variables PylintR0914:too-many-locals
 		"--disable=R0915",		// Too many statements PylintR0915:too-many-statements
 		"--disable=R0917",		// Too many positional arguments PylintR0917:too-many-positional-arguments
-		"--disable=R1705",
+		"--disable=R1705",		// Unnecessary "elif" after "return", remove the leading "el" from "elif" PylintR1705:no-else-return
 		"--indent-string='\t'"	// Use tabs for indentation
 	]
 	/*
