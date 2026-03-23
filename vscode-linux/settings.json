@@ -70,7 +70,7 @@
 		R = refactoring
 	*/
 	"pylint.args": [
-		"--disable=C0103",
+		"--disable=C0103",		// Function name doesn't conform to snake_case naming stylePylintC0103:invalid-name
 		"--disable=C0114",		// Missing module docstring PylintC0114:missing-module-docstring
 		"--disable=C0115",		// Missing class docstring PylintC0115:missing-class-docstring
 		"--disable=C0116",		// Missing function or method docstring PylintC0116:missing-function-docstring
@@ -78,6 +78,7 @@
 		"--disable=C0303",
 		"--disable=C0303",		// Trailing whitespace PylintC0303:trailing-whitespace
 		"--disable=C0304",		// Final newline missing PylintC0304:missing-final-newline
+		"--disable=C0305",		// Trailing newlines PylintC0305:trailing-newlines
 		"--disable=C0311",
 		"--disable=C0321",
 		"--disable=C0325",
@@ -91,16 +92,19 @@
 		"--disable=W0603",		// Using the global statement PylintW0603:global-statement
 		"--disable=W0621",		// Redefining name from outer scope PylintW0621:redefined-outer-name
 		"--disable=W0702",
-		"--disable=W0718",
+		"--disable=W0718",		// Catching too general exception ExceptionPylintW0718:broad-exception-caught
 		"--disable=W0719",
 		"--disable=W1514",
 		"--disable=R0902",		// Too many instance attributes PylintR0902:too-many-instance-attributes
 		"--disable=R0903",		// Too few public methods PylintR0903:too-few-public-methods
+		"--disable=R0912",		// Too many branches PylintR0912:too-many-branches
 		"--disable=R0913",		// Too many arguments PylintR0913:too-many-arguments
 		"--disable=R0914",		// Too many local variables PylintR0914:too-many-locals
 		"--disable=R0915",		// Too many statements PylintR0915:too-many-statements
 		"--disable=R0917",		// Too many positional arguments PylintR0917:too-many-positional-arguments
 		"--disable=R1705",		// Unnecessary "elif" after "return", remove the leading "el" from "elif" PylintR1705:no-else-return
+		"--disable=R1720",		// Unnecessary "elif" after "raise", remove the leading "el" from "elif" PylintR1720:no-else-raise
+		"--disable=R1724",		// Unnecessary "else" after "continue", remove the "else" and de-indent the code inside it PylintR1724:no-else-continue
 		"--indent-string='\t'"	// Use tabs for indentation
 	]
 	/*
