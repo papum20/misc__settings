@@ -75,7 +75,7 @@
 		"--disable=C0115",		// Missing class docstring PylintC0115:missing-class-docstring
 		"--disable=C0116",		// Missing function or method docstring PylintC0116:missing-function-docstring
 		"--disable=C0301",		// Line too long PylintC0301:line-too-long
-		"--disable=C0303",
+		"--disable=C0302",		// Too many lines in module PylintC0302:too-many-lines
 		"--disable=C0303",		// Trailing whitespace PylintC0303:trailing-whitespace
 		"--disable=C0304",		// Final newline missing PylintC0304:missing-final-newline
 		"--disable=C0305",		// Trailing newlines PylintC0305:trailing-newlines
